@@ -34,7 +34,7 @@ const isDescendant = (parent: HTMLElement, child: HTMLElement) => {
 export default (props: Props) => {
 
   const [value, setValue] = useState(props.value);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const picker = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
