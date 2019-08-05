@@ -1,9 +1,9 @@
 {
   "name": "react-hiragana-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hiragana Picker for React",
-  "main": "lib/index.js",
-  "type": "lib/index.d.ts",
+  "main": "lib/src/index.js",
+  "type": "lib/src/index.d.ts",
   "scripts": {
     "test": "jest",
     "dev": "webpack-dev-server --config webpack.dev.js --host 0.0.0.0",
