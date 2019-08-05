@@ -1,0 +1,85 @@
+.hiragana-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.hiragana-picker__btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: #FFF;
+  appearance: none;
+  -webkit-appearance: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hiragana-picker__header {
+  background-color: #DDD;
+  border: 1px solid #999;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiragana-picker__list-wrap {
+  position: absolute;
+  top: 55px;
+  left: 0;
+}
+
+.hiragana-picker__list-wrap::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent #FFF transparent;
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  z-index: 0;
+}
+
+.hiragana-picker__list-wrap::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8.5px 12px 8.5px;
+  border-color: transparent transparent #999 transparent;
+  position: absolute;
+  top: -10px;
+  left: 11px;
+  z-index: 0;
+}
+
+.hiragana-picker__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  z-index: 1;
+}
+
+.hiragana-picker__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiragana-picker__list-btn {
+  background-color: #FFF;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
